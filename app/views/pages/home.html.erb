@@ -8,7 +8,7 @@
         <div class="well">
             <h2>Basic Membership</h2>
             <h4>A free account gives you access our community!</h4>
-            <%= link_to "Free Sign Up", new_user_registration_path, class: 'btn btn-success btn-lg' %>
+            <%= link_to "Free Sign Up", new_user_registration_path(plan: @basic_plan.id), class: 'btn btn-success btn-lg' %>
         </div>
     </div>
     
@@ -16,7 +16,7 @@
         <div class="well">
             <h2>Premium Membership</h2>
             <h4>A premium account gives you access to our secret areas.</h4>
-            <%= link_to "Sign Up", new_user_registration_path, class: 'btn btn-success btn-lg' %>
+            <%= link_to "Sign Up", new_user_registration_path(plan: @pro_plan.id), class: 'btn btn-success btn-lg' %>
         </div>
     </div>
 </div>
