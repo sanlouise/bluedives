@@ -1,49 +1,50 @@
-<div class="jumbotron text-center">
-  <h1>Welcome to Dive Hub</h1>
-  <h3>Where divers find the best dive sites.</h3>
-</div>
-<div class="row text-center">
-  
-  <% if user_signed_in? %>
-    <div class ="col-md-6">
-      <div class="well">
-        <h2 class="text-center">Your Profile</h2>
-        
-          <% if current_user.profile %>
-            <%= link_to "Edit", edit_user_profile_path(current_user), class: 'btn btn-default btn-lg btn-block' %>
-          <%= link_to "View", user_path(current_user), class: 'btn btn-default btn-lg btn-block' %>
-            
-          <% else %>
-          <p>Start off right by creating your profile!</p>
-            <%= link_to "Create", new_user_profile_path(current_user), class: 'btn btn-default btn-lg btn-block'  %>
-          <% end %>
-        </div>
-      </div>
-      
+  <!--<%= link_to image_tag("https://pixabay.com/static/uploads/photo/2015/09/23/16/49/coral-reef-954057_960_720.jpg", id: "bg") %>-->
+  <div class="jumbotron text-center well col-md-8 col-md-offset-2">
+      <h1>Welcome to Dive Hub</h1>
+      <h3>Where divers find the best dive sites.</h3>
+    
+  </div>
+  <div class="row text-center">
+    
+    <% if user_signed_in? %>
       <div class ="col-md-6">
         <div class="well">
-          <h2 class="text-center">The Community</h2>
-            <p> Meet dive enthusiasts and professionals! </p>
-          <%= link_to "Visit", users_path, class: 'btn btn-default btn-lg btn-block' %>
+          <h2 class="text-center">Your Profile</h2>
+          
+            <% if current_user.profile %>
+              <%= link_to "Edit", edit_user_profile_path(current_user), class: 'btn btn-default btn-lg btn-block' %>
+            <%= link_to "View", user_path(current_user), class: 'btn btn-default btn-lg btn-block' %>
+              
+            <% else %>
+            <p>Start off right by creating your profile!</p>
+              <%= link_to "Create", new_user_profile_path(current_user), class: 'btn btn-default btn-lg btn-block'  %>
+            <% end %>
           </div>
+        </div>
+        
+        <div class ="col-md-6">
+          <div class="well">
+            <h2 class="text-center">The Community</h2>
+              <p> Meet dive enthusiasts and professionals! </p>
+            <%= link_to "Visit", users_path, class: 'btn btn-default btn-lg btn-block' %>
+            </div>
+        </div>
+    <% else %>
+      <div class="col-md-6">
+        <div class="well">
+          <h2 class="text-center">Basic Membership</h2>
+          <h4>A free account gives you access to the community.</h4>
+          <br/>
+          <%= link_to "Sign up with Basic", new_user_registration_path(plan: @basic_plan.id), class: 'btn btn-primary btn-lg btn-block' %>
+        </div>
       </div>
-  <% else %>
-    <div class="col-md-6">
-      <div class="well">
-        <h2 class="text-center">Basic Membership</h2>
-        <h4>A free account gives you access to the community.</h4>
-        <br/>
-        <%= link_to "Sign up with Basic", new_user_registration_path(plan: @basic_plan.id), class: 'btn btn-primary btn-lg btn-block' %>
+      <div class="col-md-6">
+        <div class="well">
+          <h2 class="text-center">Premium Membership</h2>
+          <h4>Only $10/month to get access to the community and contact information.</h4>
+          <%= link_to "Sign up with Premium", new_user_registration_path(plan: @pro_plan.id), class: 'btn btn-success btn-lg btn-block' %>
+        </div>
       </div>
-    </div>
-    <div class="col-md-6">
-      <div class="well">
-        <h2 class="text-center">Premium Membership</h2>
-        <h4>Only $10/month to get access to the community and contact information.</h4>
-        <%= link_to "Sign up with Premium", new_user_registration_path(plan: @pro_plan.id), class: 'btn btn-success btn-lg btn-block' %>
-      </div>
-    </div>
-  <% end %>
-  
-</div>
-
+    <% end %>
+    
+  </div>
