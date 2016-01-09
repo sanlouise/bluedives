@@ -6,9 +6,9 @@
 
 
 body {
-background: #7474BF; /* fallback for old browsers */
-background: -webkit-linear-gradient(to left, #7474BF , #348AC7); /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to left, #7474BF , #348AC7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+// background: #7474BF; /* fallback for old browsers */
+// background: -webkit-linear-gradient(to left, #7474BF , #348AC7); /* Chrome 10-25, Safari 5.1-6 */
+// background: linear-gradient(to left, #7474BF , #348AC7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .alert {
@@ -23,3 +23,98 @@ background: linear-gradient(to left, #7474BF , #348AC7); /* W3C, IE 10+/ Edge, F
     background-color: #dff0d8;
     border-color: #d6e9c6;
 } 
+
+.footer {
+  text-align: center;
+  position:fixed;
+  left:0px;
+  padding-top:10px;
+  bottom:00px;
+  height:40px;
+  width:100%;
+  background-color: white;
+
+}
+
+.image.responsive.home-bg {
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/b/b5/Clownfish,_Great_Barrier_Reef,_Cairns,_Australia.jpg");
+  background-size: 100%;
+  background-repeat:no-repeat;
+  -webkit-background-size:cover;
+  -moz-background-size:cover;
+  -o-background-size:cover;
+  background-size:cover;
+  background-position:center;
+  
+  
+  
+}
+
+.jumbotron.text-center.well.col-md-8.col-md-offset-2 {
+  padding: 50px;
+  margin-top: 100px;
+  margin-bottom: 30px;
+}
+
+.navbar-default {
+  background-color: #4B77BE;
+  border-color: #fff;
+  color: #fff;
+}
+
+a {
+  color: white;
+}
+
+.span.icon-bar {
+  color:white;
+}
+
+.navbar-toggle {
+    position: relative;
+    float: right;
+    margin-right: 15px;
+    padding: 9px 10px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    background-color: white;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+.navbar-default .navbar-nav > li > a {
+  color: #fff !important;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.navbar-default .navbar-nav > li > a {
+  border: none;
+}
+
+.button.navbar-toggle.collapsed {
+  color: white;
+}
+
+
+#logo {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  float: left;
+  margin-right: 30px;
+  font-size: 2em;
+  color: #fff;
+  text-transform: none;
+  letter-spacing: none;
+  padding-top: 9px;
+  font-weight: bold;
+  background-color: none;
+  
+}
+
+#logo:hover {
+    color: white;
+    text-decoration: none;
+    background-color: none;
+  }
