@@ -1,6 +1,6 @@
 <body class ="image responsive home-bg">
   <div class="jumbotron text-center well col-md-8 col-md-offset-2">
-      <h1 class="large-home">Welcome to Dive Hub</h1>
+      <h1>Welcome to Blue Dives</h1>
       <h3>Where divers find the best dive sites.</h3>
     
   </div>
@@ -12,12 +12,12 @@
           <h2 class="text-center">Your Profile</h2>
           
             <% if current_user.profile %>
-              <%= link_to "Edit", edit_user_profile_path(current_user), class: 'btn btn-default btn-lg btn-block' %>
-            <%= link_to "View", user_path(current_user), class: 'btn btn-default btn-lg btn-block' %>
+              <%= link_to "Edit", edit_user_profile_path(current_user), class: 'btn btn-default btn-lg ' %>
+            <%= link_to "View", user_path(current_user), class: 'btn btn-default btn-lg ' %>
               
             <% else %>
             <p>Start off right by creating your profile!</p>
-              <%= link_to "Create", new_user_profile_path(current_user), class: 'btn btn-default btn-lg btn-block'  %>
+              <%= link_to "Create", new_user_profile_path(current_user), class: 'btn btn-default btn-lg '  %>
             <% end %>
           </div>
         </div>
@@ -26,7 +26,7 @@
           <div class="well">
             <h2 class="text-center">The Community</h2>
               <p> Meet dive enthusiasts and professionals! </p>
-            <%= link_to "Visit", users_path, class: 'btn btn-default btn-lg btn-block' %>
+            <%= link_to "Visit", users_path, class: 'btn btn-default btn-lg ' %>
             </div>
         </div>
     <% else %>
