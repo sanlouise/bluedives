@@ -32,20 +32,33 @@
     <% else %>
       <div class="col-md-6">
         <div class="well">
-          <h2 class="text-center">Basic Membership</h2>
-          <h4>A free account gives you access to the community.</h4>
+          <h2 class="text-center">Scuba Divers</h2>
+          <h4>Discover the world's best dive sites and share your underwater experiences.</h4>
+          
           <br/>
-          <%= link_to "Sign up with Basic", new_user_registration_path(plan: @basic_plan.id), class: 'btn btn-primary btn-lg btn-block' %>
+          <%= link_to "Sign Up", new_user_registration_path(plan: @basic_plan.id), class: 'btn btn-primary btn-lg btn-block' %>
+          
+          <div class="small-little"> It's free and always will be. </div>
         </div>
+        
+        
       </div>
       <div class="col-md-6">
         <div class="well">
-          <h2 class="text-center">Premium Membership</h2>
-          <h4>Only $10/month to get access to the community and contact information.</h4>
-          <%= link_to "Sign up with Premium", new_user_registration_path(plan: @pro_plan.id), class: 'btn btn-success btn-lg btn-block' %>
+          <h2 class="text-center">Scuba Schools</h2>
+          <h4>Be listed on the most exclusive and international diving platform.</h4>
+          <br/>
+          <%= link_to "Sign Up", new_user_registration_path(plan: @pro_plan.id), class: 'btn btn-success btn-lg btn-block' %>
+          <div class="small-little"> Plans start at only $9.99 per month. </div>
         </div>
       </div>
     <% end %>
-    
+    <div class="row">
+    <div class="col-md-12-hide">
+                                             
+            Hello
+            
+    </div>
+    </div>
   </div>
 </body>

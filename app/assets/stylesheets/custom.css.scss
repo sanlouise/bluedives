@@ -118,8 +118,8 @@ a {
 
 
 #logo {
-  margin-top: 10px;
-  margin-bottom: 7px;
+  margin-top: 15px;
+  margin-bottom: 2px;
   float: left;
   margin-right: 30px;
   font-size: 2em;
@@ -137,3 +137,15 @@ a {
     text-decoration: none;
     background-color: none;
   }
+
+.small-little {
+  font-size: 14px !important;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.col-md-12-hide {
+  opacity: 0;
+  background-color: none;
+  padding-bottom: 30px;
+}
