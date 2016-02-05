@@ -14,13 +14,21 @@
         </hr>
         <%= @user.profile.description %>
       </div>
-      <% if true#current_user.plan_id == 2 %>
+      <% if current_user.plan_id == 2 %>
         <div class="well profile-block contact-info">
           <h3>Contact Info</h3>
           
           <p><strong>Phone Number</strong>: <%= @user.profile.phone_number %></p>
           <p><strong>Email</strong>: <%= @user.profile.contact_email %> </p>
         </div>
+        
+      <% else %>
+        <div class="well profile-block contact-info">
+          <h3>Contact Info</h3>
+          <p><strong>HIDDEN</strong></p>
+          <p>Become PRO member and view contact information of <%= @user.profile.first_name %>.</p>
+        </div>
+      
       <% end %>
   
     </div>
