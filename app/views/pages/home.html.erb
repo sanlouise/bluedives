@@ -7,11 +7,12 @@
   <div class="row text-center">
     
     <% if user_signed_in? %>
-      <div class ="col-md-6">
+      <div class ="col-md-5 col-md-offset-1">
         <div class="well">
           <h2 class="text-center">Your Profile</h2>
           
             <% if current_user.profile %>
+            <p>Keep this up-to-date.</p>
               <%= link_to "Edit", edit_user_profile_path(current_user), class: 'btn btn-default btn-lg ' %>
             <%= link_to "View", user_path(current_user), class: 'btn btn-default btn-lg ' %>
               
@@ -22,7 +23,7 @@
           </div>
         </div>
         
-        <div class ="col-md-6">
+        <div class ="col-md-5 col-md-offset-right-1">
           <div class="well">
             <h2 class="text-center">The Community</h2>
               <p> Meet dive enthusiasts and professionals! </p>
@@ -30,7 +31,7 @@
             </div>
         </div>
     <% else %>
-      <div class="col-md-6">
+      <div class="col-md-5 col-md-offset-right-1">
         <div class="well">
           <h2 class="text-center">Scuba Divers</h2>
           <h4>Discover the world's best dive sites and share your underwater experiences.</h4>
