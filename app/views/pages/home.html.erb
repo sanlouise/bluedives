@@ -1,61 +1,66 @@
 <body class ="image responsive home-bg">
+  
+  <!--Main Header-->
   <div class="jumbotron text-center well col-md-8 col-md-offset-2">
-      <h1>Welcome to Dive Buddies</h1>
-      <h3>Find a dive buddy anywhere.</h3>
-    
+    <h1>Welcome to Dive Buddies</h1>
+    <h3>Find a dive buddy anywhere.</h3>
   </div>
-  <div class="row text-center">
+  
+  <!--Bottom Boxes-->
+  <div class="row">
+    <div class="col-md-12">
     
-    <% if user_signed_in? %>
-      <div class ="col-md-5 col-md-offset-1">
-        <div class="well">
-          <h2 class="text-center">Your Profile</h2>
-          
-            <% if current_user.profile %>
+      <% if user_signed_in? %>
+      
+        <!--Left Box-->
+        <div class="col-md-4 col-md-offset-1 text-center well">
+          <h2>Your Profile</h2>
+          <!--View Profile-->
+          <% if current_user.profile %>
             <p>Keep this up-to-date.</p>
-              <%= link_to "Edit", edit_user_profile_path(current_user), class: 'btn btn-default btn-lg ' %>
+            <%= link_to "Edit", edit_user_profile_path(current_user), class: 'btn btn-default btn-lg ' %>
             <%= link_to "View", user_path(current_user), class: 'btn btn-default btn-lg ' %>
-              
-            <% else %>
+          <!--Create Profile-->
+          <% else %>
             <p>Start off right by creating your profile!</p>
-              <%= link_to "Create", new_user_profile_path(current_user), class: 'btn btn-default btn-lg '  %>
-            <% end %>
-          </div>
+            <%= link_to "Create", new_user_profile_path(current_user), class: 'btn btn-default btn-lg '  %>
+          <% end %>
         </div>
-        
-        <div class ="col-md-5 col-md-offset-right-1">
-          <div class="well">
-            <h2 class="text-center">The Community</h2>
-              <p> Meet dive enthusiasts and professionals! </p>
-            <%= link_to "Visit", users_path, class: 'btn btn-default btn-lg ' %>
-            </div>
-        </div>
-    <% else %>
-      <div class="col-md-5 col-md-offset-right-1">
-        <div class="well">
-          <h2 class="text-center">Scuba Divers</h2>
-          <h4>Discover the world's best dive sites and share your underwater experiences.</h4>
+                 
+        <!--Empty Div-->
+        <div class="col-md-1">
+        </div> 
           
-          <br/>
+        <!--Right Box-->
+        <div class="col-md-4 col-md-offset-1 text-center well">
+          <h2 class="text-center">The Community</h2>
+          <p> Meet dive enthusiasts and professionals!</p>
+          <%= link_to "Visit", users_path, class: 'btn btn-default btn-lg ' %>
+        </div>
+          
+      <% else %>
+      
+        <!--Left Box-->
+        <div class="col-md-4 col-md-offset-1 text-center well">
+          <h2>Scuba Divers</h2>
+          <p>Discover the world's best dive sites and share your underwater experiences.</p>
           <%= link_to "Sign Up", new_user_registration_path(plan: @basic_plan.id), class: 'btn btn-primary btn-lg btn-block' %>
+          <div class="small-little">It's free and always will be.</div>
+        </div>
+        
+        <!--Empty Div-->
+        <div class="col-md-1">
+        </div> 
           
-          <div class="small-little"> It's free and always will be. </div>
-        </div>
-        
-        
-      </div>
-      <div class="col-md-6">
-        <div class="well">
-          <h2 class="text-center">Buddy Matching</h2>
-          <h4>Be listed on the most exclusive and international diving platform.</h4>
-          <br/>
+        <!--Right Box-->
+        <div class="col-md-4 col-md-offset-1 text-center well">
+          <h2>Buddy Matching</h2>
+          <p>Be listed on the most exclusive and international diving platform.</p>
           <%= link_to "Sign Up", new_user_registration_path(plan: @pro_plan.id), class: 'btn btn-success btn-lg btn-block' %>
-          <div class="small-little"> One time only $4.99. </div>
+          <div class="small-little">One time only $4.99.</div>
         </div>
-      </div>
-    <% end %>
-    <div class="row">
-
+        
+      <% end %>
     </div>
   </div>
 </body>
