@@ -13,6 +13,18 @@ body {
   font-family: 'Karma', serif;
 }
 
+.image.responsive.home-bg {
+  background-image: image-url("coral.jpg");
+  background-size: 100%;
+  background-repeat:no-repeat;
+  -webkit-background-size:cover;
+  -moz-background-size:cover;
+  -o-background-size:cover;
+  background-size:cover;
+  background-position:center;
+  
+}
+
 .alert {
     padding: 15px;
     margin-bottom: 20px;
@@ -28,14 +40,12 @@ body {
 
 .footer {
   text-align: center;
-
+  color: white;
   left:0px;
   margin-top:20px;
   padding-top:10px;
-  bottom:00px;
-  height:40px;
   width:100%;
-  background-color: white;
+  background-color: none;
 
 }
 
@@ -44,19 +54,6 @@ body {
   background-color: #ECF0F1;
 }
 
-.image.responsive.home-bg {
-  background-image: image-url("coral.jpg");
-  background-size: 100%;
-  background-repeat:no-repeat;
-  -webkit-background-size:cover;
-  -moz-background-size:cover;
-  -o-background-size:cover;
-  background-size:cover;
-  background-position:center;
-  
-  
-  
-}
 
 .jumbotron.text-center.well.col-md-8.col-md-offset-2 {
   padding: 50px;
@@ -150,3 +147,10 @@ a {
   background-color: none;
   padding-bottom: 30px;
 }
+
+//User Show Page//
+
+.col-md-6.text-center {
+  color: white;
+}
+

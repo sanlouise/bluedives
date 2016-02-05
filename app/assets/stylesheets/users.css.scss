@@ -1,21 +1,25 @@
 /* Users show page styles */
 
-.user-show-avatar {
-  height: 128px;
-  width: 128px;
+.image.responsive.showuser-bg {
+  background-image: image-url("indo.jpg");
+  background-size: 100%;
+  background-repeat:no-repeat;
+  -webkit-background-size:cover;
+  -moz-background-size:cover;
+  -o-background-size:cover;
+  background-size:cover;
+  background-position:center;
   
 }
 
-.job-title-icon {
-  width: 35px;
-  height: 30px;
-  border: 1px solid black; 
-  display: inline-block;
-  border-radius: 4px;
-  background-color: #669ab7;
-  color: white;
-  text-align: center;
+
+.user-show-avatar {
+  height: 200px;
+  width: 200px;
+  margin-top: 20px;
+  
 }
+
 
 .well.profile-block {
     color: #000;
@@ -24,17 +28,18 @@
 }
 }
 .well.profile-description {
-  background-color: #888080;
-  border-color: #000;
+  background-color: white;
+  border-color: white;
 }
 .well.contact-info {
-  background-color: #fff;
-  border-color: #000;
+  background-color: white;
+  border-color: white;
 }
 
 /* Users index page styles */
 .user-index-avatar {
-  border-radius: 50%;
+  border-radius: 0%;
+  
 }
 
 .well.white-bg {
