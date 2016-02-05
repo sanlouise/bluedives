@@ -13,6 +13,9 @@
                 <%= link_to user do %>
                   <%= image_tag user.profile.avatar.url(:thumb), class: 'user-index-avatar' %>
                 <% end %>
+                  <p class="small">
+                    <%= user.profile.country %> 
+                  </p>
               <% end %>
             </div>
             
@@ -26,6 +29,7 @@
                   <span class="label label-danger">PRO</span> 
                 <% end %>
               </p>
+
             </div>
           </div>
         </li>
