@@ -5,8 +5,10 @@
     </div>
       <div class ="col-md-6 text-center">
         <h1><%= @user.profile.first_name %> <%= @user.profile.last_name %></h1>
-        
-      <%= @user.profile.job_title %></h3>
+        <hr>
+        <h4>Lives in: <%= @user.profile.country %></h4>
+        <h4><strong><%= @user.profile.job_title %></strong></h4>
+        <hr>
       <div class="well profile-block profile-description text-center">
         <h3>Description</h3>
         </hr>
