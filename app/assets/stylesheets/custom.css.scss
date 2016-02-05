@@ -76,6 +76,7 @@ body {
 
 a {
   color: white;
+  text-decoration: none;
 }
 
 .span.icon-bar {
@@ -164,10 +165,6 @@ a {
   color: black;
   font-weight: bold;
   text-decoration: none !important;
-}
-
-.btn.btn-succes.nav:hover {
-  background-color: #006442 !important;
 }
 
 .signup-title{

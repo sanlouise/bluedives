@@ -45,3 +45,18 @@
 .well.white-bg {
   background-color: white;
 }
+
+.user-listing {
+  color: #003171;
+  text-decoration: none !important;
+}
+
+.user-listing:hover {
+  color: #003171;
+  text-decoration: none !important;
+  font-weight: bold;
+}
+
+.col-md-6.col-md-offset-3.text-center {
+  color: black;
+}

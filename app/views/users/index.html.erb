@@ -1,7 +1,8 @@
 <div class="row">
-  <div class="col-md-8 col-md-offset-2">
-    <h1>Blue Dives Community</h1>
-    <p>The world's largest dive community.</p>
+  <div class="col-md-6 col-md-offset-3 text-center">
+    <h1>All Members</h1>
+    <p>The world's friendliest dive community.</p>
+    
     <ul class="list-unstyled">
       <% @users.each do |user| %>
         <% if user.profile %>
@@ -17,7 +18,7 @@
             
             <div> 
               <%= link_to user do %>
-                <h2><%= user.profile.first_name %> <%= user.profile.last_name %></h2>
+                <h2 class="user-listing"><%= user.profile.first_name %> <%= user.profile.last_name %></h2>
               <% end %>
               <p>
                 <%= user.profile.job_title %> 
