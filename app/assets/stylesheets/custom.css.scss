@@ -43,9 +43,10 @@ body {
   color: #BFBFBF;
   left:0px;
   margin-top:20px;
-  padding-top:10px;
+  padding-top:5px;
   width:100%;
   background-color: none;
+  font-weight: bold;
 
 }
 
@@ -132,6 +133,7 @@ a {
 
 #logo:hover {
     color: white;
+    font-size: 210%;
     text-decoration: none;
     background-color: none;
   }
@@ -154,12 +156,21 @@ a {
   color: white;
 }
 
-.links a{
+.links.text-center a{
   color: black;
 }
 
-.links a:hover{
+.links.text-center a:hover{
   color: black;
   font-weight: bold;
   text-decoration: none !important;
+}
+
+.btn.btn-succes.nav:hover {
+  background-color: #006442 !important;
+}
+
+.signup-title{
+  color:black;
+  text-align: center;
 }

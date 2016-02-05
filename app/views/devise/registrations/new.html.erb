@@ -1,17 +1,18 @@
 <div class="row">
   <div class="col-md-6 col-md-offset-3 text-center">
-    <% if params[:plan] == '2' %>
-      <h1>Pro Account</h1>
-      <p>Sign up for the pro account for $4.99/month and get access to the community and contact information!</p>
-    <% else %>
-      <h1>Basic Account</h1>
-      <p>Sign up for free and get basic access to the community.</p>
-    <% end %>
+    <div class="signup-title">
+      <% if params[:plan] == '2' %>
+        <h1>Pro</h1>
+        <p>Get instant access to contact information from divebuddies all around the world. </br> <strong>Only $4.99.</strong></p>
+      <% else %>
+        <h1>Basic </h1>
+        <p>Get basic access to our awesome community.</p>
+      <% end %>
+    </div>
   </div>
-  
   <div class="col-md-6 col-md-offset-3">
-    <div class="well">
-    <h2>Sign up</h2>
+    <div class="well text">
+    <h2 class="text-center">Sign up</h2>
       <% if params[:plan] == '2' %>
         <%= render "pro_form" %>
       <% else %>

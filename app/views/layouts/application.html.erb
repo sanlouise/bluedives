@@ -11,12 +11,8 @@
 </head>
 <body>
   <%= render 'shared/navigation' %>
-  <div class="container">
-    <% flash.each do |key, value| %>
-      <%= content_tag :div, value, class: "alert alert-#{key}" %>
-    <% end %>
-    <%= yield %>
-  </div>
+  <%= render 'shared/messages' %>
+  <%= yield %>
   <%= render 'shared/footer' %>
 </body>
 </html>
