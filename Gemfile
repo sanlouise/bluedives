@@ -26,12 +26,7 @@ gem 'uglifier', '1.3.0'
 gem 'coffee-rails', '4.0.0'
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer',  platforms: :ruby
-# Use carrierwave for image uploads
-gem 'carrierwave'
-# Use Mini Magick for image resizing
-gem 'mini_magick'
-# Use fog for image production
-gem 'fog'
+
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
@@ -53,8 +48,9 @@ gem 'stripe', '1.16.1'
 # Use figaro to hide secret keys
 gem 'figaro', '1.0.0'
 
-#User paperclip for image uploads
-gem 'paperclip', '4.2.1'
+#Use paperclip for image uploads
+gem 'paperclip'
+gem 'aws-sdk'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '3.1.7'
