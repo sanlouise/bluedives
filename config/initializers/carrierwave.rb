@@ -10,6 +10,8 @@ CarrierWave.configure do |config|
     :host                   => 's3.example.com',             # optional, defaults to nil
     :endpoint               => 'https://s3.example.com:8080' # optional, defaults to nil
   }
+  
+  config.cache_dir = "#{Rails.root}/tmp/uploads" # To let CarrierWave work on heroku
   config.fog_directory  = ENV['S3_Bucket']                             # required
 
 end
