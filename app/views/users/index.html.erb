@@ -9,10 +9,7 @@
         <li>
           <div class="well row <%= cycle('white-bg', '') %>">
             <div class="col-sm-4 text-center">
-              <% if user.profile.avatar %>
-                <%= link_to user do %>
-                  <%= image_tag user.profile.avatar.url(:thumb), class: 'user-index-avatar' %>
-                <% end %>
+              <li><%= link_to gravatar_for(user), user_path(user) %></li>
                   <p class="small">
                     <%= user.profile.country %> 
                   </p>
